@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block main%}
+ <img src"{{url_for('static', filename='blacklady.png') }}" alt="beautiful black lady wearing glasses">
+ <h1>Liandra A. Whittaker</h1>
+ <p>@liaaw</p>
+ <p>February 14,2024</p>
+ <p>I love nature</p>
+ <container class="followcount">
+    <h6>1</h6>
+    <p>Post</p>
+    <h6>3</h6>
+    <p>Following</p>
+    <h6>10K</h6>
+    <p>followers</p>
+    <button id="followperson">Follow</button>
+ </container>
+ {%endblock%}
