@@ -19,11 +19,12 @@ def about():
 
 @app.route('/profile')
 def profile():
-    return render_template('profile.html')
+    date_joined= format_date_joined(datetime.date(2022,2,1))
+    return render_template('profile.html', date=date_joined)
 
 
-def format_date_Joined(day, month, year):
-    return month, year
+def format_date_joined(date):
+    return date.strftime("%B, %Y")
 
 ###
 # The functions below should be applicable to all Flask apps.
